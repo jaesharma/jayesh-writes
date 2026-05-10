@@ -2,31 +2,33 @@ import React from 'react';
 
 const Blog: React.FC = () => {
   return (
-    <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <h1 className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter">Blog</h1>
-      <p className="text-slate-500 dark:text-zinc-400 mb-12 font-medium">
-        Thoughts on engineering, design, and life.
-      </p>
+    <div className="space-y-8">
+      <div>
+        <h1 className="text-3xl font-bold mb-2">Blog</h1>
+        <p className="text-gray-600 dark:text-gray-400">
+          Thoughts on engineering, design, and life.
+        </p>
+      </div>
 
-      <div className="space-y-12">
-        <article className="group relative">
+      <div className="space-y-12 mt-8">
+        <article>
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
-            <time className="font-mono text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest whitespace-nowrap">
+            <time className="text-sm text-gray-500 whitespace-nowrap">
               May 10, 2026
             </time>
             <div>
-              <h2 className="text-2xl font-black text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors mb-2">
-                <a href="#">Building jayesh.writes</a>
+              <h2 className="text-xl font-bold mb-2">
+                <a href="#" className="border-b border-transparent hover:border-gray-800 dark:hover:border-gray-200 transition-colors">Building non-caffeinated-musings</a>
               </h2>
-              <p className="text-slate-600 dark:text-zinc-400 leading-relaxed line-clamp-2">
+              <p className="text-gray-800 dark:text-gray-200 leading-relaxed">
                 A deep dive into the technical decisions behind this platform, from choosing the right stack to implementing a custom theme system.
               </p>
             </div>
           </div>
         </article>
 
-        <div className="pt-12 border-t border-slate-100 dark:border-zinc-800">
-          <p className="text-slate-400 dark:text-zinc-600 font-bold italic">
+        <div className="pt-8 border-t border-gray-300 dark:border-gray-700">
+          <p className="text-gray-500 italic">
             More articles are currently in the works...
           </p>
         </div>
